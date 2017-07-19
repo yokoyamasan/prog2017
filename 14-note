@@ -1,0 +1,58 @@
+important turtle 
+t = turtle.Turtle()
+
+t.home()
+t.clear()
+
+t.forward(100)
+t.left(90)
+t.forward(100)
+
+def rect(x, y, a):
+
+  t.up()
+  t.home()
+  t.forward(x)
+  t.left(90)
+  t.forward(y)
+  t.down()
+  for i in range(4):
+    t.forward(a)
+    t.left(-90)
+#空行
+
+t.clear()
+rect(10, 10, 100)
+rect(10, -110, 100)
+rect(-110, 10, 100)
+rect(-110, -110, 100)
+
+#168
+dice→さいころ？
+
+class Dice:
+ face_num = 6
+ def shoot(self):
+   return random.randint(1, self.face_num)
+#空行
+
+import random
+aDice = Dice() #クラスをもとにオブジェクトを作る
+aDice.shoot() #オブジェクトを使う
+
+#171 class
+#172 self
+#173 __init__
+
+第十章　オブジェクト指向プログラミング
+・クラス　　・クラス派生
+
+#181  CUI対しょうてきなのはGUI
+
+#import sys
+
+
+
+for line in sys.stdin:
+
+  print(line)
